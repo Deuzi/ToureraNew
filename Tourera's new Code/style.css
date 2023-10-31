@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    font-family: 'Sometype Mono', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sometype+Mono&family=Spinnaker&display=swap');
+
+nav{
+    padding: 1rem 2rem 7rem 2rem;
+    width: 100%;
+    height: 50vh;
+    background-image: url('images/antaractica.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #394658;
+}
+.main-nav header{
+    padding-left: 2rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-nav #min-screen-nav{
+    cursor: pointer;
+    display: flex;
+}
+nav .nav-btn{
+    font-size: 1.5rem;
+}
+input[type="text"]{
+    border: 0;
+}
+button{
+    font-family: 'Sometype Mono', monospace;
+    border: 0.1px solid #394658;
+}
+.search-items input::placeholder{
+    font-family:'Sometype Mono', monospace;
+    padding-left: 1rem;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #394658;
+    margin-right: 2rem;
+}
+.main-nav a:hover{
+    padding: 1rem;
+    background-color: #394658;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #E5EBF1;
+}
+#min-screen-nav label{
+    display: none;
+}
+#min-screen-nav input{
+    display: none;
+}
+.intro-section{
+    padding:1rem 3rem;
+}
+.intro{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #394658;
+}
+.intro h3{
+    font-size: 3rem;
+}
+.intro h4{
+    font-size: 2rem;
+    padding: 0 0.75rem;
+}
+.intro #exclusive-access{
+    max-width: 300px;
+    font-size: 1rem;
+}
+.intro .sub-intro{
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 1rem;
+}
+.search-items{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#search-input1{
+    width: 30rem;
+    height: 3.5rem;
+    border-radius: 30px;
+}
+.search-container button{
+    position: absolute;
+    font-size: 0.75rem;
+    top: 0.5rem;
+    bottom: 1rem;
+    right: 1px;
+    margin: 0.1rem 1.5rem;
+}
+#search-input2{
+    height: 2rem;
+    padding: 0 0.5rem;
+    color: white;
+    background-color: #394658;
+    border-radius: 20px;
+}
+.holiday{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #413E40;
+}
+#deal-section{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 0rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.deal__section__header{
+    display: flex;
+    margin-top: 2.33rem;
+    margin-bottom: 0;
+    position: absolute;
+    left: 270px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #394658;
+}
+.hot-deals{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    color: #394658;
+}
+.hot-deals img{
+    height: 270px;
+    width: 350px;
+    border-radius: 10px;
+}
+.hot-deals .location{
+    font-weight: 900;
+}
+.deal-t{
+    display: flex;
+}
+.rating i{
+    margin-right: 0.55rem;
+}
+.rating{
+    padding-left: 1rem;
+}
+.deals #cost{
+    font-weight: 900;
+}
+#adventure-container{
+    background-color:#394658;
+}
+.adventure-body{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    color: #E5EBF1;
+}
+.adventure__quote{
+    height: 75%;
+    width: 60%;
+}
+#adventure-container img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.policy{
+    background-color:#E5EBF1;
+    text-align: center;
+    padding: 2rem 3rem;
+}
+.gurantee-policy{
+    background-color: #394658;
+    color:#E5EBF1;
+    margin: auto 10rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+.ts-t{
+    font-weight: bold;
+}
+.resort-style{
+    line-height: 1.5;
+    margin: 1.5rem auto;
+    color: #394658;
+}
+.sponsor-intro p{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+.sponsors{
+    padding: 0.75rem;
+    color: #394658;
+}
+.sponsor-imgs{
+    display: flex;
+    justify-content: center;
+}
+.sponsors img{
+    width: 100px;
+    height: 100px;
+    margin-right: 3rem;
+}
+.QandA{
+    background: #394658; 
+    padding: 2rem;
+    color: #394658;
+}
+.QandA__intro{
+    text-align: center;
+    color: #E5EBF1;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+}
+#resort-QandA li {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0.75rem 10rem;
+}
+#resort-QandA li label{
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#resort-QandA li span{
+    transform: rotate(90deg);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#resort-QandA label + input[type="checkbox"]{
+    display: none;
+}
+#resort-QandA .content{
+    padding: 0.75 0.85rem;
+    line-height: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#resort-QandA label + input[type="checkbox"]:checked + .content{
+    max-height: 200px;
+}
+
+.QandA ul{
+    list-style: none;
+}
+.did-we{
+    height: 20vh;
+    padding: 3rem 0;
+    text-align: center;
+    background: #E5EBF1;
+    color: #394658;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.did-we button{
+    margin-top: 0.75rem;
+    background: #394658;
+    color: #E5EBF1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 200;
+    border: 0;
+}
+footer{
+    background: #534e4e;
+    color: #E5EBF1;
+    padding: 2rem 5rem;
+    width: 100%;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.footer-container header{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 0.55rem;
+}
+.footer-container ul{
+    list-style: none;
+}
+.footer-container a{
+    text-decoration: none;
+    color:#E5EBF1;
+}
+.footer-container  i{
+    margin-right: 0.75rem;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.lower-section .first-sec{
+    margin-bottom: 1rem;
+}
+.first-sec span{
+    margin-left: 30rem;
+}
+.second-sec{
+    margin-top: 1rem;
+}
+.lower-section ul{
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+}
+.lower-section li{
+    margin-right: 1.5rem;
+}
+
+/*Media section*/
+
+@media(max-width:700px){
+    body{
+        width: 100vw;
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 1.5rem auto;
+    }
+    .search-items{
+        position: absolute;
+    }
+    #search-input1{
+        width: 25rem;
+        height: 3.5rem;
+        margin-left: 4rem;
+        border-radius: 30px;
+    }
+    .search-container button{
+        position: absolute;
+        top: 0.5rem;
+        bottom: 1rem;
+        right: 1px;
+        margin: 0.1rem 1.5rem;
+    }
+    #search-input2{
+        height: 2rem;
+        width:fit-content;
+        padding: 0 0.5rem;
+        border-radius: 20px;
+        font-size: 0.5em;
+    }   
+    .intro{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    #intro-section header{
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+    #intro-section .intro h3{
+        font-size: 1rem;
+    }
+    .intro h4{
+        font-size: 1rem;
+    }
+    #intro-section{
+        position: relative;
+    }
+
+    .main-nav .nav-btn{
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        padding: 1rem;
+        line-height: 5;
+        top: 0;
+        margin-top: 0;
+        height: 100%;
+        width: 65%;
+        left:0px;
+        position: fixed;
+        padding: 1rem;
+        z-index: 1;
+        background-color: #E5EBF1;
+    }
+    .main-nav a{
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        color: #394658;
+    }
+    nav{
+        height: 40vh;
+    }
+    .main-nav #min-screen-nav i{
+        cursor: pointer;
+        display: flex;
+        padding: 1.2rem 1rem;
+    }
+    .main-nav{
+        margin-bottom: 1.5rem;
+        margin-top: 0.55rem;
+        margin: 0.55rem 0 1.5rem 0;
+        display: flex;
+    }
+    #min-screen-nav #close-btn{
+        display: none;
+    }
+    #min-screen-nav input[type="checkbox"]:checked + .nav-btn{
+        display: flex;
+    }
+    #min-screen-nav label{
+        display: flex;
+    }
+    #min-screen-nav #checkbox{
+        display: none;
+    }
+
+    .search-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 1rem;
+    }
+    .search-items{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    #search-input1{
+        width: 15rem;
+        height: 2.5rem;
+        border-radius: 30px;
+        margin: 1rem;
+    }
+    .search-container button{
+        position: absolute;
+        font-size: 0.75rem;
+        top: 1.2rem;
+        bottom: 1.2rem;
+        right: 1px;
+        margin: 0.1rem 1.5rem;
+    }
+    #search-input2{
+        height: 2rem;
+        padding: 0 0.5rem;
+        border-radius: 20px;
+    }
+    .holiday{
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem;
+        font-size: 0.75rem;
+    }
+    #deal-section{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 0rem;
+    }
+    .deal-container{
+        padding: 0 1rem;
+        margin: 0 1rem;
+    }
+    .deal__section__header{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        position: absolute;
+        left: 50px;
+        font-weight: bold;
+        font-size: 0.75rem;
+    }
+    .hot-deals{
+        margin-top: 2.2rem;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        padding: 0 0.5rem;
+        max-width: 500px;
+    }
+    .hot-deals img{
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    .hot-deals figcaption{
+        font-size: 0.7em;
+        max-width: 65%;
+    }
+    .hot-deals .rating{
+        font-size: 0.75rem;
+        max-width: 35%;
+    }
+
+    .adventure-body{
+        max-width: 500px;
+        padding: 2rem;
+    }
+    .adventure-body p{
+        font-size: 1rem;
+    }
+    #adventure-container img{
+        height:250px;
+        width:150px;
+    }
+    .adventure__quote{
+        max-width: 60%;
+        margin-right: 0.5rem;
+    }
+    .adventure-img{
+        margin-top: 4rem;
+        max-width: 40%;
+        margin-right: 1rem;
+    }
+    .policy{
+        font-size: 0.75rem;
+    }
+    .gurantee-policy{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #resort-QandA li{
+        margin: 0.75rem 1rem;
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
+    footer{
+        padding: 2rem 2rem;
+    }
+    .footer-container header{
+        font-size: 1rem;
+    }
+    .logo{
+        margin-right: 0.5rem;
+    }
+    .sponsor-intro p{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .sponsors{
+        padding: 0.75rem;
+    }
+    .sponsor-imgs{
+        display: flex;
+    }
+    .sponsors img{
+        width: 50px;
+        height: 50px;
+        margin-right: 0.5rem;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem 1rem;
+        margin: 1rem;
+    }
+    .lower-section{
+        position: relative;
+    }
+    .lower-section li{
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .lower-section .rights{
+        margin-right: 0.65rem;
+    }
+    .lower-section span{
+        margin: 0;
+        position: absolute;
+        bottom: 30px;
+        right: 8px;
+        font-weight: bold;
+    }
+    .did-we{
+        font-size: 1.1rem;
+    }
+    .did-we button{
+        font-size: 0.75rem;
+    }
+    .social i{
+        width: 20px;
+    }
+}
+@media(min-width:750px){
+    .hot-deals{
+        margin-top: 2.2rem;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:  1.5rem 2.3rem;
+        padding: 0 0.5rem;
+        max-width: 1000px;
+    }
+    .hot-deals img{
+        height: 200px;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .hot-deals figcaption{
+        font-size: 0.75em;
+        max-width: 75%;
+    }
+    .deal__section__header{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        left: 70px;
+        font-weight: bold;
+        font-size: 1em; 
+    }
+    .intro h3{
+        font-size: 1.5em;
+    }
+    .intro h4{
+        font-size: 1.3em;
+    }
+    .intro span{
+        font-weight: bold;
+    }
+    nav .nav-btn{
+        font-size: 1em;
+    }
+}
+@media(min-width:850px){
+    .hot-deals{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 7rem;
+        padding: 0;
+        justify-content: center;
+    }
+    .hot-deals img{
+        height: 270px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    .hot-deals figcaption{
+        font-size: 1em;
+        max-width: 75%;
+    }
+    .deal__section__header{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        left: 240px;
+        font-weight: bold;
+        font-size: 1em; 
+    }
+    nav .nav-btn{
+        font-size: 1.3em;
+    }
+}
