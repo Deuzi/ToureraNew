@@ -293,6 +293,7 @@ button{
 }
 .did-we button{
     margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     background: #394658;
     color: #E5EBF1;
     padding: 0.5rem 0.75rem;
