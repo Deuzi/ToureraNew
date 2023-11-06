@@ -13,7 +13,7 @@ html, body{
 nav{
     padding: 1rem 2rem 7rem 2rem;
     width: 100%;
-    height: 50vh;
+    height: 25%;
     background-image: url('images/antaractica.jpg');
     background-position: center;
     background-size: cover;
@@ -151,7 +151,8 @@ button{
     color: #394658;
 }
 .hot-deals{
-    margin-top: 5rem;
+    padding: 0 1rem;
+    margin: 5rem 1 0 1rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 5rem;
@@ -302,7 +303,7 @@ button{
 }
 footer{
     background: #534e4e;
-    color: #E5EBF1;
+    color: #534e4e;
     padding: 2rem 5rem;
     width: 100%;
 }
