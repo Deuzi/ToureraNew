@@ -284,7 +284,8 @@ button{
 }
 .did-we{
     height: 20vh;
-    padding: 3rem 0;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
     text-align: center;
     background: #E5EBF1;
     color: #394658;
